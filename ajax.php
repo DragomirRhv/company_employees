@@ -60,7 +60,7 @@
         $year = $_POST['year'];
 
         $date = $year . '-' . $month . '-' . $day;
-        
+
 
         /* END FOR DOB(DATE OF BIRTH) */
 
@@ -171,7 +171,7 @@
                 )
             ";
             if(mysqli_query($conn, $sql)) {
-                echo "Successfully added staff member!";
+                $success = "Successfully added staff member";
             }
 
         }
