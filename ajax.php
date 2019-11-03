@@ -176,11 +176,11 @@
 
         }
 
-        function showArray($data){
+        /* function showArray($data){
             echo "<pre>";
             print_r($data);
             echo "</pre>";
-        }
+        } */
         /* showArray($errors); */
     }
 
@@ -202,6 +202,15 @@
             </div> -->
         </div>
         
+        <?php if(isset($errors)) : ?>
+            <div class="ol">
+                <ol>
+                    <?php foreach($errors as $error) : ?>
+                    <li><?=$error?></li>
+                    <?php endforeach ?>
+                </ol>
+            </div>
+        <?php endif ?>
         <div class="form-holder">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <label for="fname">First Name:</label>
