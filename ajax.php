@@ -181,7 +181,7 @@
             print_r($data);
             echo "</pre>";
         }
-        showArray($errors);
+        /* showArray($errors); */
     }
 
 ?>
